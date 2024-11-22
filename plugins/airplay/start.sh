@@ -16,6 +16,6 @@ echo "Device name: $SOUND_DEVICE_NAME"
 echo "Starting Shairport Sync"
 exec shairport-sync \
   --name "$SOUND_DEVICE_NAME" \
-  --output alsa \
+  --output pa \
   -- -d pulse \
   | echo "Shairport-sync started. Device is discoverable as $SOUND_DEVICE_NAME"
